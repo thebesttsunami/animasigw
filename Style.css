@@ -1,0 +1,28 @@
+<style>
+     .animasi {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px; /* Setengah dari tinggi */
+  margin-left: -50px; /* Setengah dari lebar */
+  animation: putar 2s linear infinite; /* Animasi putar selama 2 detik, berulang tak terbatas */
+}
+
+@keyframes putar {
+  from {
+    transform: rotate(0deg); /* Rotasi awal 0 derajat */
+  }
+  to {
+    transform: rotate(350deg); /* Rotasi akhir 360 derajat (satu putaran penuh) */
+  }
+}
+body {
+  background: black;  
+}
+p, h1 {
+    background: yellow;
+}
+    </style>

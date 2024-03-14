@@ -1,26 +1,41 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <body>
-        <html>
-            <style>
-                body {
-                    background: black;
-                }
-                h2 {
-                    background: blue;
-                }
-                h4 {
-                    background: yellow;
-                }
-                p {
-                    background: white;
-                }
-                   </style>
-             <center>
-        <h2>My Vin Web</h2>
-                 <h4>Terimakasih telah berkunjung</h4>
-                 <p>Facebook: <a href="https://www.facebook.com/konsekuensimu">Kevin Xyz</a>
-                   <p>Messenger: <a href="https://m.me/konsekuensimu">Kevin Xyz</a>
-             </center>
-    </body>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animasi berputar</title>
+</head>
+<body>
+    <style>
+     .animasi {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px; /* Setengah dari tinggi */
+  margin-left: -50px; /* Setengah dari lebar */
+  animation: putar 2s linear infinite; /* Animasi putar selama 2 detik, berulang tak terbatas */
+}
+
+@keyframes putar {
+  from {
+    transform: rotate(0deg); /* Rotasi awal 0 derajat */
+  }
+  to {
+    transform: rotate(350deg); /* Rotasi akhir 360 derajat (satu putaran penuh) */
+  }
+}
+body {
+  background: black;  
+}
+p, h1 {
+    background: yellow;
+}
+    </style>
+<div class="animasi"></div>
+<center><h1>animasi berputar</h1>
+<p>kevin pandu samudera</p>
+</body>
 </html>
